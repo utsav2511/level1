@@ -1,0 +1,4 @@
+the output is same but their representation is like
+300
+and 
+300.000000

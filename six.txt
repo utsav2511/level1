@@ -1,0 +1,54 @@
+int i = 8, j = 5, k;
+float x = 0.005, y = -0.01, z;
+char a, b, c = 'c', d = 'd';
+
+
+(a) k=(i+j)
+(b) i=j=1.1
+(c) k=(j==5) ? i:j;
+(d) k=(j>5) ? i:j;
+(e) z=(x>=0)?x:0;
+(f) x*=2;
+(g) i+=(j-2)
+(h) k=3+4-7*8/5%10;
+(i) z=(x>=0)?x:0
+
+1
+k = 8 + 5
+k = 13
+
+2
+j = 1.1   // (j is of type int, so 1.1 is truncated to 1)
+i = 1.1   // (i is also assigned the truncated value of 1)
+
+3
+because j value is five
+k=i
+k=5
+
+4
+z = (0.005 >= 0) ? 0.005 : 0
+z = 0.005
+
+5
+x *= 2   // Equivalent to x = x * 2
+x = 0.005 * 2
+x = 0.01
+
+6
+i += (5 - 2)
+i += 3
+i = 8 + 3
+i = 11
+
+7
+division and multiplication should in top priority
+k = 3 + 4 - 56 / 5 % 10   // (7 * 8 = 56)
+k = 3 + 4 - 11 % 10       // (56 / 5 = 11)
+k = 3 + 4 - 1
+k = 6
+
+8
+z = (0.01 >= 0) ? 0.01 : 0
+z = 0.01
+

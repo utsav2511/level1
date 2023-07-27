@@ -1,0 +1,8 @@
+main ()
+{
+int a=10, b=20;
+printf(“%d”, a,b);
+}
+
+in line four one %d is absent
+so can't obtain output
