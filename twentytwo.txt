@@ -1,0 +1,19 @@
+X = b>8? b<<3: b>4? b>>1: b;
+
+if b=7
+then 
+b<<3 is false
+and 
+b>4?b>>1:b;
+is true
+
+then we have to further evaluate this
+7>4
+is true
+b>>1
+is true
+7>>1 then we have to shift it
+0111 is binary of 7
+then shift it 0011
+and 0011 is binary of 3
+so x=3
